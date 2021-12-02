@@ -6,6 +6,6 @@ target 'GKitExample' do
   use_frameworks!
 
   # Pods for GKitExample
- pod'GKit'
- pod'GKitModel'
+ pod 'GKit', :git => 'https://github.com/xiamoweinuan/GKit.git'
+ pod 'GKitModel', :git => 'https://github.com/xiamoweinuan/GKitModel.git'
 end

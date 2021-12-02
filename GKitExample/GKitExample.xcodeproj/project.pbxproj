@@ -53,7 +53,6 @@
 				2AA5AB28577CB7905AFF67B4 /* Pods-GKitExample.debug.xcconfig */,
 				360A7E44A635B56CCD384169 /* Pods-GKitExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
