@@ -1,0 +1,20 @@
+PODS:
+  - GKit (0.0.22):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - GKit
+
+SPEC REPOS:
+  trunk:
+    - GKit
+    - Masonry
+
+SPEC CHECKSUMS:
+  GKit: 914ab9cb482a22a57d08638407034cf9a490e9b1
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 8a7557329f3ee4cff667f999f8e2945717e8b872
+
+COCOAPODS: 1.11.2

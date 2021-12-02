@@ -1,0 +1,6 @@
+framework module GKit {
+  umbrella header "GKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
