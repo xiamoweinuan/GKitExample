@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-GKitExample/Pods-GKitExample-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
 ${BUILT_PRODUCTS_DIR}/GKit/GKit.framework
+${BUILT_PRODUCTS_DIR}/GKitGCD/GKitGCD.framework
 ${BUILT_PRODUCTS_DIR}/GKitModel/GKitModel.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework

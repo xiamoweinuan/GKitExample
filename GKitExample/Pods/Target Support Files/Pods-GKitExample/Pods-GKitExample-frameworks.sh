@@ -178,12 +178,14 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKit/GKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GKitGCD/GKitGCD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKitModel/GKitModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKit/GKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GKitGCD/GKitGCD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKitModel/GKitModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
 fi

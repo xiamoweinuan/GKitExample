@@ -1,0 +1,6 @@
+framework module GKitGCD {
+  umbrella header "GKitGCD-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,4 +8,6 @@ target 'GKitExample' do
   # Pods for GKitExample
  pod 'GKit', :git => 'https://github.com/xiamoweinuan/GKit.git'
  pod 'GKitModel', :git => 'https://github.com/xiamoweinuan/GKitModel.git'
+ pod 'GKitGCD', :git => 'https://github.com/xiamoweinuan/GKitGCD.git'
+
 end
