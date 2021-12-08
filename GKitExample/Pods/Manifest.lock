@@ -2,8 +2,10 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - GKit (0.0.22):
+  - GKit (0.0.23):
     - Masonry
+  - GKitComponent (0.0.3):
+    - GKit
   - GKitGCD (0.0.1)
   - GKitModel (0.0.8):
     - FMDB
@@ -12,6 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - GKit (from `https://github.com/xiamoweinuan/GKit.git`)
+  - GKitComponent (from `https://github.com/xiamoweinuan/GKitComponent.git`, tag `0.0.3`)
   - GKitGCD (from `https://github.com/xiamoweinuan/GKitGCD.git`)
   - GKitModel (from `https://github.com/xiamoweinuan/GKitModel.git`)
 
@@ -23,6 +26,9 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   GKit:
     :git: https://github.com/xiamoweinuan/GKit.git
+  GKitComponent:
+    :git: https://github.com/xiamoweinuan/GKitComponent.git
+    :tag: 0.0.3
   GKitGCD:
     :git: https://github.com/xiamoweinuan/GKitGCD.git
   GKitModel:
@@ -30,8 +36,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   GKit:
-    :commit: a6024ead25f5924bab02b0fce2111a001db6c3c9
+    :commit: 3bb3a3521fe7f2fceab3cead03d1630e7008de4d
     :git: https://github.com/xiamoweinuan/GKit.git
+  GKitComponent:
+    :git: https://github.com/xiamoweinuan/GKitComponent.git
+    :tag: 0.0.3
   GKitGCD:
     :commit: 2c745b2f6fc0476e57b1bc786512bb32850c1cd7
     :git: https://github.com/xiamoweinuan/GKitGCD.git
@@ -41,11 +50,12 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  GKit: 914ab9cb482a22a57d08638407034cf9a490e9b1
+  GKit: bb17bb730dc3168be723586532829722d21a055e
+  GKitComponent: a267391eb2455bfa1bd5212693a54cc1bf374514
   GKitGCD: 71dd816d4b724ae4c88d1b36d52a241159be594d
   GKitModel: d3801fc27a0324d762b6be79da520bafeff1cca9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 3c96ebd9f297b73e5f03d001c43a398f91101716
+PODFILE CHECKSUM: 6325304768a02ee63692b35706d7854fadee4d80
 
 COCOAPODS: 1.11.2

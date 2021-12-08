@@ -70,11 +70,91 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+生成GKit文件
+$pod lib create GKit
+
+修改GKit.podspec文件
+
+将上传的代码放入class中执行
+$cd /Users/gs/Documents/github/GKit/GKit/Example
+$pod install
+
+进入GKit首个目录
+$cd /Users/gs/Documents/github/GKit/GKit
+添加文件
+$git add .
+添加描述
+$git commit -m 'firstCommit'
+将本地仓库与远程仓库建立联系
+$git remote add origin https://github.com/xiamoweinuan/GKit.git
+//如果远程仓库上出现了你本地仓库不存在的提交分支，强行让本地分支覆盖远程分支git push origin master -f
+$git push origin master
+打tag
+$git tag 0.0.5
+上传tag
+$git push --tags
+
+
+****
+问题1.github上生成仓库下方没有选，第一次提交是master，后来怎么变成main分支了，看对应两种上传方式
+问题2.githubDesktop上不能直接提交，否则会出现验证的时候路径对不上，应该是和命令行上传的不一致
+******
+
+$cd /Users/gs/Documents/github/GKit/GKit
+$git add .
+$git commit -m "first commit"
+$git branch -M main
+$git remote add origin https://github.com/xiamoweinuan/GKit.git
+$git push -u origin main
+$git tag 0.0.5
+$git push --tags
+
+验证
+$pod spec lint --verbose --allow-warnings --use-libraries
+提交
+$pod trunk push GKit.podspec --verbose --allow-warnings --use-libraries
+
+
+
+//git push --tagspod spec lint --verbose --allow-warnings --use-libraries
+//pod trunk push GKit.podspec --verbose --allow-warnings --use-libraries
+//pod spec lint --use-libraries --allow-warnings  --skip-import-validation --skip-tests
+//--skip-import-validation
 </string>
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
 			<string>GKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright (c) 2021 gaoshuangone@qq.com &lt;gaoshuangone@qq.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>GKitComponent</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

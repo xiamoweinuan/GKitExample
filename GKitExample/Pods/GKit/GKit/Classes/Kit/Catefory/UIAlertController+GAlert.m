@@ -30,7 +30,7 @@
     [alert addAction:cancelAction];
     
     // present alertView on rootViewController
-    [kGetCurrentVC() presentViewController:alert animated:YES completion:nil];
+    [kGetCurrentVC presentViewController:alert animated:YES completion:nil];
 }
 
 +(ZJAnimationPopView*)setPopViewWitCustomView:(UIView*)alertView{
@@ -141,7 +141,7 @@
     [alert addAction:defaultAction];
     
     
-    [kGetCurrentVC() presentViewController:alert animated:YES completion:nil];
+    [kGetCurrentVC presentViewController:alert animated:YES completion:nil];
 }
 
 /** Alert  任意多个按键 返回选中的 buttonIndex 和 buttonTitle */
@@ -164,7 +164,7 @@
     }
     
     
-    [kGetCurrentVC() presentViewController:alert animated:YES completion:nil];
+    [kGetCurrentVC presentViewController:alert animated:YES completion:nil];
 
 
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		202FE0B879C650EA4C7E33BB /* Pods_GKitExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADDBC7A98FAF22524080323 /* Pods_GKitExample.framework */; };
 		3BD822872758F3EA00514C4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD822862758F3EA00514C4F /* AppDelegate.m */; };
-		3BD8228A2758F3EA00514C4F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD822892758F3EA00514C4F /* SceneDelegate.m */; };
 		3BD8228D2758F3EA00514C4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8228C2758F3EA00514C4F /* ViewController.m */; };
 		3BD822902758F3EA00514C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD8228E2758F3EA00514C4F /* Main.storyboard */; };
 		3BD822922758F3EE00514C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD822912758F3EE00514C4F /* Assets.xcassets */; };
@@ -23,8 +22,6 @@
 		3BD822822758F3EA00514C4F /* GKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD822852758F3EA00514C4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BD822862758F3EA00514C4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3BD822882758F3EA00514C4F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		3BD822892758F3EA00514C4F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		3BD8228B2758F3EA00514C4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3BD8228C2758F3EA00514C4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3BD8228F2758F3EA00514C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,8 +76,6 @@
 			children = (
 				3BD822852758F3EA00514C4F /* AppDelegate.h */,
 				3BD822862758F3EA00514C4F /* AppDelegate.m */,
-				3BD822882758F3EA00514C4F /* SceneDelegate.h */,
-				3BD822892758F3EA00514C4F /* SceneDelegate.m */,
 				3BD8228B2758F3EA00514C4F /* ViewController.h */,
 				3BD8228C2758F3EA00514C4F /* ViewController.m */,
 				3BD8228E2758F3EA00514C4F /* Main.storyboard */,
@@ -217,7 +212,6 @@
 				3BD8228D2758F3EA00514C4F /* ViewController.m in Sources */,
 				3BD822872758F3EA00514C4F /* AppDelegate.m in Sources */,
 				3BD822982758F3EE00514C4F /* main.m in Sources */,
-				3BD8228A2758F3EA00514C4F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +366,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +397,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -22,6 +22,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
+NS_INLINE UIImage* kImageName(NSString*str){
+    return [UIImage imageNamed:str];
+}
+NS_INLINE UIImage* kImageFile(NSString* str){
+    return [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:str ofType:nil]];
+
+}
+NS_INLINE NSURL* kUrl(NSString* str){
+    return [NSURL URLWithString:str];
+}
 NS_INLINE BOOL kISEmpty(NSObject *obj){
     
     if (obj==nil) {
@@ -66,6 +76,18 @@ NS_INLINE BOOL kISEmpty(NSObject *obj){
     }
     return NO;
 }
+NS_INLINE NSString* kStringSafe(NSObject* obj){
+    if (!kISEmpty(obj)) {
+        if ([(NSString*)obj isKindOfClass:[NSString class]]) {
+            return [NSString stringWithFormat:@"%@", obj];
+        }else if ([obj isKindOfClass:[NSNumber class]]){
+            NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+           return [formatter stringFromNumber:(NSNumber*)obj];
+        }
+    }
+    return @"";
+    
+}
 NS_INLINE UIViewController* kGetCurrentVCFrom(UIViewController *rootVC){
     UIViewController *currentVC;
     
@@ -93,11 +115,7 @@ NS_INLINE UIViewController* kGetCurrentVCFrom(UIViewController *rootVC){
     
     return currentVC;
 }
-NS_INLINE UIViewController* kGetCurrentVC(void){
-    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    
-    return kGetCurrentVCFrom(rootViewController);
-}
+
 /** 自定提醒窗口 */
 NS_INLINE UIAlertView * kAlertView(NSString *title, NSString *message, id delegate, NSString *cancelTitle, NSString *otherTitle){
     __block UIAlertView *alerView;
